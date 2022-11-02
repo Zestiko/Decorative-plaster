@@ -3,4 +3,7 @@
 @import './utils/common';
 @import './utils/mixin';
 @import './utils/hidden';
-@import './header';
+@import './layout/container';
+@import './layout/section';
+@import './components/header';
+@import './components/gallary';
