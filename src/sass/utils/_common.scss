@@ -1,26 +1,18 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
-
-html {
-    box-sizing: border-box;
-  }
-  *,
   *::after,
   *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
-  body {
-    font-family: 'DM Sans', 'Titan One', sans-serif;
-  }
+
   
-//   h1,
-//   h2,
-//   h3,
-//   h4,
-//   h5,
-//   h6,
-//   p {
-//     margin-top: 0;
-//   }
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // p {
+  //   ;
+  // }
   ul {
     list-style: none;
     padding-left: 0;

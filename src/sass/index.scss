@@ -1,3 +1,4 @@
+@import './utils/normalaize';
 @import './layout/fonts';
 @import './utils/breakpoints';
 @import './utils/variables';
@@ -6,5 +7,8 @@
 @import './utils/hidden';
 @import './layout/container';
 @import './layout/section';
+@import './components/collaps';
 @import './components/header';
+@import './components/skills';
+@import './components/social';
 @import './components/gallary';

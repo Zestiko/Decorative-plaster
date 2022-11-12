@@ -1,5 +1,15 @@
+@import '../utils/breakpoints';
+
 .header {
     background-color: rgba(45, 62, 79, 1);
+    position: relative;
+    
+};
+
+.mobile-menu {
+    display: flex;
+    // justify-content: space-between;
+    
 }
 
 
@@ -8,16 +18,63 @@
     line-height: 1.2;
     letter-spacing: 1px;
     color: #CF404D;
+    margin-right: 120px;
+    @include for-desktop {
+        margin-right: 240px;
+    }
+
 };
 
 .nav{
+    &__item {
+       @include for-phone-up {
+        margin-top: 30px;
+       }
+    }
     &__link {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.43;
         text-transform: uppercase;
         color: #FFFFFF;
+        padding: 8px 16px;
+        
     };
     &__link:hover {
         color: #CF404D;
     }
+    &__list {
+    @include for-tablet-up-min {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        gap: 45px;
+        }
+        @include for-desktop {
+            gap: 90px;
+        }
+    }
+    
 }
+
+.menu-container {
+    background-color: rgba(45, 62, 79, 1);
+    
+    text-align: center;
+    @include for-phone-up {
+    display: none;
+    position: fixed;
+    top: 36;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+        &.is-open {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    
+        
+};

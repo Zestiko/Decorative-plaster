@@ -8,23 +8,33 @@
   </head>
   <body>
    <header class="header">
-    <div class="container">
+    <div class="container header--container">
+     <div class="mobile-menu">
       <a href="#" class="header__logo">
         INCREDIBLE
       </a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Gallary</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-        </ul> 
+      <button class="hamburger hamburger--collapse" type="button" data-menu-button="">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="menu-container" data-menu id="menu-container">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Gallary</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+      </div>
       </nav>
-    </div>
+      </div>
+     </div>
+    
   </header>
   <section>
     <div class="container">
-      <iframe
+      <!-- <iframe
     id="vimeo-player"
     src="https://player.vimeo.com/video/760628870"
     width="320"
@@ -32,41 +42,73 @@
     frameborder="0"
     allowfullscreen
     allow="autoplay; encrypted-media"
-  ></iframe>
+  ></iframe> -->
     </div>
   </section>
   <section>
-    <div class="container">
-      <h1>Section Heading</h1>
-    <p>Some text inside the block</p>
+    <div class="container skills">
+      <h1 class="skills__tittle">Section Heading</h1>
+    <p class="skills__description">Some text inside the block</p>
 
-    <h3>Style1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati nemo iste at odit nulla expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p>
-
-    <h3>Style1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati nemo iste at odit nulla expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p>
-
-    <h3>Style1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati nemo iste at odit nulla expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p>
-
-    <h3>Style1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati nemo iste at odit nulla expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p>
+    <ul class="benefits">
+      <li class="benefits__item">
+        <img class="benefits__icon" src="./images/Group.png" alt="icon" width="100">
+        <h3 class="benefits__tittle icon-one">Style1</h3>
+        <p class="benefits__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati nemo iste at odit nulla
+      expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p></li>
+      <li class="benefits__item">
+        <img class="benefits__icon" src="./images/Group.png" alt="icon" width="100">
+        <h3 class="benefits__tittle icon-two">Style2</h3>
+        <p class="benefits__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati
+          nemo iste at odit nulla
+          expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p>
+      </li>
+      <li class="benefits__item">
+        <img class="benefits__icon" src="./images/Group.png" alt="icon" width="100">
+        <h3 class="benefits__tittle icon-thee">Style3</h3>
+        <p class="benefits__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati
+          nemo iste at odit nulla
+          expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p>
+      </li>
+      <li class="benefits__item">
+        <img class="benefits__icon" src="./images/Group.png" alt="icon" width="100">
+        <h3 class="benefits__tittle icon-foure">Style4</h3>
+        <p class="benefits__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde quis dolor obcaecati
+          nemo iste at odit nulla 
+          expedita, magnam explicabo libero veniam, nam id, consequuntur debitis minima neque in.</p>
+      </li>
+    </ul>
     </div>
   </section>
   <section>
-    <div class="container">
-      <a href="">
+    <div class="container socials">
+      <!-- <a class="socials__link" href="">
         <img src="./images/insta.png" width="160" alt="">
       </a>
-      <a href="">
+      <a class="socials__link" href="">
         <img src="./images/insta.png" width="160" alt="">
       </a>
-      <a href="">
+      <a class="socials__link" href="">
         <img src="./images/insta.png" width="160" alt="">
       </a>
-      <a href="">
+      <a class="socials__link" href="">
         <img src="./images/insta.png" width="160" alt="">
       </a>
+    </div> -->
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img src="./images/Group.png" width="160" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./images/insta.png" width="160" alt="">
+          </li>
+          <li class="glide__slide">
+            <img src="./images/insta.png" width="160" alt="">
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <section>

@@ -1,0 +1,92 @@
+.skills {
+    &__tittle {
+        font-size: 31px;
+        line-height: 1.16;
+        text-transform: uppercase;
+        color: #313131;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        // border: 1px solid red;
+        text-align: center;
+    };
+    &__description {
+        font-size: 19px;
+        line-height: 1.58;
+        color: rgba(115, 115, 115, 0.74);
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+};
+
+.benefits {
+    display: flex;
+    margin: -15px;
+    @include for_phone_up {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @include for-tablet-up-min {
+        flex-wrap: wrap;
+        
+        
+    }
+    &__item {
+        margin: 15px;
+        @include for-tablet-up{
+            width: calc((100% - 60px)/2);
+        }
+        @include for_phone_up {
+             margin-bottom: 30px;        
+        }
+        @include for-desktop {
+            width: calc((100% - 120px)/4);
+        }
+    }
+    &__icon {
+        margin-bottom: 20px;
+    }
+    &__tittle {
+        font-size: 17px;
+        line-height: 1.76;
+        text-transform: uppercase;
+        color: #313131;
+        width: 50px;
+        &::before{
+            content: '';
+            height: 120px;
+                background-color: #F5F4FA;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+        }
+        
+    };
+    
+    &__article {
+        font-size: 15px;
+        line-height: 1.33;
+        color: rgba(0, 0, 0, 0.74);
+        width: 220px;
+    };
+}
+
+.icon-one::before {
+    background-image: url('/src/images/Group.png');
+}
+
+.icon-two::before {
+    background-image: url('/src/images/Group.png');
+}
+
+.icon-thee::before {
+    background-image: url('/src/images/Group.png');
+}
+
+.icon-foure::before {
+    background-image: url('/src/images/Group.png');
+}

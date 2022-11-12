@@ -3,7 +3,7 @@
 // 1200px
 
 @mixin for-phone-up {
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       @content;
     }
   }
