@@ -12,6 +12,24 @@
     
 }
 
+iframe {
+    display: block;
+    width: 280px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    @include for-tablet-up{
+        width: 720px;
+        height: 480px;
+    }
+    @include for-desktop {
+        width: 1150px;
+        height: 720px;
+        
+        
+    }
+}
 
 .header__logo {
     font-size: 30px;

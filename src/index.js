@@ -1,5 +1,6 @@
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/src/assets/sass/glide.core.scss";
+import "@glidejs/glide/src/assets/sass/glide.theme.scss";
 import SimpleLightbox from "simplelightbox";
 import 'simplelightbox/dist/simple-lightbox.min.css';
 const refs = {
@@ -14,4 +15,25 @@ refs.menuButton.addEventListener('click', () => {
 
 
 let galleryNew = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
-new Glide('.glide').mount();
+const checkbox = document.querySelector('.glide')
+const glide = new Glide('.glide', {
+  hoverpause: true,
+  autoplay: 2000,
+    perView: 4,
+  breakpoints: {
+    1024: {
+      perView: 2
+    },
+    600: {
+      perView: 1
+    }
+  },
+})
+
+checkbox.addEventListener('change',  () => {
+  glide.update({
+    hoverpause: true,
+  })
+})
+
+glide.mount()
