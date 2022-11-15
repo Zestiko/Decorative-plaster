@@ -3,6 +3,7 @@ import "@glidejs/glide/src/assets/sass/glide.core.scss";
 import "@glidejs/glide/src/assets/sass/glide.theme.scss";
 import SimpleLightbox from "simplelightbox";
 import 'simplelightbox/dist/simple-lightbox.min.css';
+import SmoothScroll from "smooth-scroll";
 const refs = {
     menuButton: document.querySelector('[data-menu-button]'),
     mobileMenu: document.querySelector('[data-menu]')
@@ -36,4 +37,6 @@ checkbox.addEventListener('change',  () => {
   })
 })
 
-glide.mount()
+glide.mount();
+
+const scroll = new SmoothScroll('a[href*="#"]');

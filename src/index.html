@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-  </head>
-  <body>
+  </head >
+  <body id="main">
    <header class="header">
     <div class="container header--container">
      <div class="mobile-menu">
@@ -21,10 +21,10 @@
       <div class="menu-container" data-menu id="menu-container">
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Gallary</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+            <li class="nav__item"><a class="nav__link" href="#main">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#skills">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#gallary">Gallary</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
           </ul>
       </div>
       </nav>
@@ -32,20 +32,20 @@
      </div>
     
   </header>
-  <section>
+  <section id="video">
     <div class="container">
       <iframe
-    id="vimeo-player"
-    src="https://player.vimeo.com/video/760628870"
-    width="300"
-    height="320"
-    frameborder="0"
-    allowfullscreen
-    allow="autoplay; encrypted-media"
+        id="vimeo-player"
+        src="https://player.vimeo.com/video/760628870"
+        width="300"
+        height="320"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; encrypted-media"
   ></iframe>
     </div>
   </section>
-  <section>
+  <section id="skills">
     <div class="container skills">
       <h1 class="skills__tittle">Section Heading</h1>
     <p class="skills__description">Some text inside the block</p>
@@ -80,7 +80,7 @@
     </ul>
     </div>
   </section>
-  <section class="socials">
+  <section id="contact" class="socials">
     <div class="container ">
       <!-- <a class="socials__link" href="">
         <img src="./images/insta.png" width="160" alt="">
@@ -118,7 +118,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="gallary">
     <div class="container">
       <h2 class="gallery__tittle">
         Gallary

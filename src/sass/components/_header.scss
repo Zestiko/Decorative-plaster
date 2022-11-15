@@ -39,11 +39,19 @@ iframe {
     margin-right: 120px;
     @include for-desktop {
         margin-right: 240px;
+    };
+    @include for-tablet-up-min {
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
 };
 
 .nav{
+    @include for-tablet-up-min {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
     &__item {
        @include for-phone-up {
         margin-top: 30px;
@@ -91,6 +99,7 @@ iframe {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            overflow: hidden;
         }
     }
     
