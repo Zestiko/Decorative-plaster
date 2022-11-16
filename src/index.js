@@ -19,7 +19,7 @@ let galleryNew = new SimpleLightbox('.gallery a', { captionsData: 'alt', caption
 const checkbox = document.querySelector('.glide')
 const glide = new Glide('.glide', {
   hoverpause: true,
-  autoplay: 2000,
+  // autoplay: 2000,
     perView: 4,
   breakpoints: {
     1024: {
